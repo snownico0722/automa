@@ -45,9 +45,9 @@
         <ui-input
           :model-value="data.name"
           autocomplete="off"
-          label="File name"
+          :label="t('common.fileName')"
           class="w-full"
-          placeholder="unnamed"
+          :placeholder="t('common.unnamed')"
           @change="updateData({ name: $event })"
         />
       </edit-autocomplete>
@@ -94,7 +94,7 @@
           </ui-checkbox>
           <ui-input
             :model-value="data.csvDelimiter"
-            label="Delimiter"
+            :label="t('common.delimiter')"
             class="mt-1"
             placeholder=","
             @change="updateData({ csvDelimiter: $event })"

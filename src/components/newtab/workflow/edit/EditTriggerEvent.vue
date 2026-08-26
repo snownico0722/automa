@@ -37,13 +37,13 @@
             :model-value="params.bubbles"
             @change="updateParams({ ...params, bubbles: $event })"
           >
-            Bubbles
+            {{ t('workflow.triggerEvent.bubbles') }}
           </ui-checkbox>
           <ui-checkbox
             :model-value="params.cancelable"
             @change="updateParams({ ...params, cancelable: $event })"
           >
-            Cancelable
+            {{ t('workflow.triggerEvent.cancelable') }}
           </ui-checkbox>
         </div>
         <component

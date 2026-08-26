@@ -47,6 +47,23 @@
     "password": "密码",
     "category": "分类",
     "optional": "可选",
+    "value": "值",
+    "text": "文本",
+    "column": "列",
+    "emptyValue": "空",
+    "none": "无",
+    "shortDescription": "简短描述",
+    "writeHere": "在此输入...",
+    "environment": "环境",
+    "stage": "预发布",
+    "production": "生产",
+    "delimiter": "分隔符",
+    "parameters": "参数",
+    "iconUrl": "图标 URL",
+    "raw": "原始数据",
+    "unnamed": "未命名",
+    "selectTeam": "选择团队",
+    "saveDraft": "保存草稿",
     "0disable": "0 表示禁用",
     "millisecond": "毫秒 | 毫秒"
   },
@@ -72,7 +89,33 @@
       "avatar": "头像",
       "username": "用户名",
       "email": "邮箱"
+    },
+    "deleteLog": {
+      "sectionTitle": "工作流日志",
+      "logsLimit": "日志数量上限"
+    },
+    "editor": {
+      "zoom": "缩放",
+      "minZoom": "最小缩放",
+      "maxZoom": "最大缩放",
+      "xAxis": "X 轴",
+      "yAxis": "Y 轴"
     }
+  },
+  "credential": {
+    "duplicate": "凭据“{name}”已存在"
+  },
+  "packages": {
+    "details": {
+      "packageName": "包名称",
+      "myPackage": "我的包"
+    },
+    "openPage": "打开包页面",
+    "imageUnavailable": "图片无法显示",
+    "byAuthor": "作者：{author}",
+    "copySuffix": "副本",
+    "deleteTitle": "删除包",
+    "deleteConfirm": "确定要删除“{name}”包吗？"
   },
   "shared": {
     "blockCategories": {
@@ -124,10 +167,172 @@
     }
   },
   "workflow": {
+    "parameterPrompt": {
+      "timeout": "超时时间（毫秒，0 表示禁用）",
+      "insertParameters": "插入参数"
+    },
+    "triggerEvent": {
+      "bubbles": "冒泡",
+      "cancelable": "可取消"
+    },
+    "teamShare": {
+      "title": "与团队共享工作流",
+      "description": "此工作流将共享给你的团队",
+      "update": "更新工作流",
+      "success": "工作流已成功共享给团队。"
+    },
     "blocks": {
       "ai-workflow": {
         "name": "AI 工作流",
-        "description": "由 AI Power 创建的工作流"
+        "description": "由 AI Power 创建的工作流",
+        "configureToken": "配置 AI Power Token",
+        "selectWorkflows": "选择工作流",
+        "selectWorkflow": "选择一个工作流",
+        "searchWorkflows": "搜索工作流...",
+        "newWorkflow": "新建 AI 工作流",
+        "inputs": "工作流输入",
+        "noInputs": "无输入",
+        "outputsReadonly": "工作流输出（仅查看）",
+        "noOutputs": "无输出",
+        "tokenIntro": "输入 AI Power Token 以启用 AI 工作流功能",
+        "howToGetToken": "如何获取 AI Power Token",
+        "tokenStep1": "在 AI Power 控制台中打开“设置 → 授权”",
+        "tokenStep2": "进入“AI Power Authorization”区域",
+        "tokenStep3": "点击“Generate New Token”创建新 Token",
+        "tokenStep4": "复制生成的 Token 并粘贴到下方",
+        "openSettings": "打开 AI Power 设置",
+        "tokenLabel": "AI Power Token",
+        "tokenPlaceholder": "输入 AI Power Token...",
+        "uploadFailed": "文件上传失败",
+        "fetchWorkflowsFailed": "获取 AI Power 工作流失败：{message}",
+        "fetchDetailFailed": "获取 AI Power 工作流详情失败：{message}"
+      },
+      "cookie": {
+        "seeProperties": "查看所有可用属性",
+        "nameOptional": "名称（可选）",
+        "valueOptional": "值（可选）",
+        "pathOptional": "路径（可选）",
+        "domainOptional": "域名（可选）",
+        "sameSiteOptional": "sameSite（可选）",
+        "expirationDateOptional": "expirationDate（秒，可选）",
+        "noPermissionDetailed": "此模块需要“Cookies”权限才能正常工作"
+      },
+      "webhook": {
+        "header": "请求头 {index}",
+        "responseType": "响应类型",
+        "dataPath": "数据路径",
+        "assignColumns": "[分配列]"
+      },
+      "new-window": {
+        "typeLabel": "类型",
+        "urlOptional": "URL（可选）",
+        "types": {
+          "normal": "普通窗口",
+          "popup": "弹出窗口",
+          "panel": "面板"
+        }
+      },
+      "forms": {
+        "selectOptionBy": "选择选项的方式",
+        "selectByValue": "按值",
+        "positionGroup": "按位置",
+        "firstOption": "第一个选项",
+        "lastOption": "最后一个选项",
+        "customPosition": "自定义",
+        "optionPosition": "选项位置"
+      },
+      "proxy": {
+        "hostLabel": "主机",
+        "portLabel": "端口",
+        "supportedProtocols": "支持的协议：http、https、socks4 和 socks5"
+      },
+      "delay": {
+        "timeLabel": "延迟时间（毫秒）"
+      },
+      "switch-tab": {
+        "findBy": "查找标签页方式",
+        "tabTitle": "标签页标题",
+        "index": "索引",
+        "findByTypes": {
+          "match-patterns": "匹配模式",
+          "tab-title": "标签页标题",
+          "next-tab": "下一个标签页",
+          "prev-tab": "上一个标签页",
+          "tab-index": "标签页索引"
+        }
+      },
+      "press-key": {
+        "targetElementOptional": "目标元素（可选）",
+        "keysPlaceholder": "按键"
+      },
+      "create-element": {
+        "runBeforeLoad": "页面加载前运行",
+        "availableFunctions": "可用函数",
+        "preloadType": "类型",
+        "style": "样式",
+        "script": "脚本",
+        "addScript": "添加脚本"
+      },
+      "get-text": {
+        "regex": "正则表达式",
+        "flags": "标志",
+        "expressionFlags": "表达式标志",
+        "textPlaceholder": "文本",
+        "useTextContent": "使用 textContent",
+        "flagNames": {
+          "g": "全局",
+          "i": "忽略大小写",
+          "m": "多行"
+        }
+      },
+      "sort-data": {
+        "propertyLabel": "属性 {index}",
+        "ascending": "升序",
+        "descending": "降序"
+      },
+      "insert-data": {
+        "button": "插入数据（{count}）",
+        "title": "插入数据",
+        "fileUrl": "文件 URL",
+        "filePathOrUrl": "文件绝对路径 / 文件 URL",
+        "sheetOptional": "工作表（可选）",
+        "rangeOptional": "范围（可选）",
+        "importFile": "导入文件",
+        "fileAccessHelp": "没有文件访问权限，点击了解详情",
+        "previewData": "预览数据",
+        "clearPreview": "清除预览",
+        "fileAction": "文件操作",
+        "defaultAction": "默认",
+        "readBase64": "读取为 Base64",
+        "csvExcelFile": "CSV/Excel 文件",
+        "readJson": "读取为 JSON",
+        "readJsonHeaders": "读取为带表头的 JSON"
+      },
+      "browser-event": {
+        "groups": {
+          "Tab": "标签页",
+          "Window": "窗口"
+        },
+        "eventNames": {
+          "tab:close": "标签页关闭",
+          "tab:loaded": "标签页加载完成",
+          "tab:create": "标签页创建",
+          "window:create": "窗口创建",
+          "window:close": "窗口关闭"
+        },
+        "matchPattern": "匹配模式",
+        "filter": "筛选",
+        "urlOrRegex": "URL 或正则表达式"
+      },
+      "execute-workflow": {
+        "localGroup": "本地",
+        "teamGroup": "团队"
+      },
+      "notification": {
+        "messagePlaceholder": "通知消息"
+      },
+      "take-screenshot": {
+        "fileType": "类型"
       }
     },
     "conditionBuilder": {

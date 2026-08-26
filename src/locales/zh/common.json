@@ -1,10 +1,10 @@
 {
   "common": {
-    "dashboard": "主面板",
+    "dashboard": "仪表盘",
     "workflow": "工作流 | 工作流",
     "collection": "集合 | 集合",
     "log": "日志 | 日志",
-    "block": "单元 | 单元",
+    "block": "模块 | 模块",
     "schedule": "计划",
     "folder": "文件夹 | 文件夹",
     "new": "新建",
@@ -26,41 +26,73 @@
     "save": "保存",
     "data": "数据",
     "stop": "停止",
-    "sheet": "工作簿",
+    "sheet": "工作表",
     "pause": "暂停",
-    "resume": "恢复",
+    "resume": "继续",
     "action": "操作 | 操作",
     "packages": "包",
     "storage": "存储",
     "editor": "编辑器",
-    "running": "运行",
+    "running": "运行中",
     "globalData": "全局数据",
     "fileName": "文件名",
     "description": "描述",
     "disable": "禁用",
     "disabled": "已禁用",
     "enable": "启用",
-    "fallback": "反馈",
+    "fallback": "回退",
     "update": "更新",
-    "feature": "特点",
-    "duplicate": "副本",
+    "feature": "功能",
+    "duplicate": "创建副本",
     "password": "密码",
     "category": "分类",
     "optional": "可选",
-    "0disable": "0 到禁用",
+    "0disable": "0 表示禁用",
     "millisecond": "毫秒 | 毫秒"
+  },
+  "settings": {
+    "menu": {
+      "profile": "个人资料"
+    },
+    "profile": {
+      "title": "个人资料",
+      "loading": "正在加载个人资料...",
+      "signedInAs": "已登录为",
+      "signIn": "登录",
+      "signInDesc": "登录以备份工作流并使用云端功能",
+      "signOut": "退出登录",
+      "signingOut": "正在退出登录...",
+      "signedOut": "已退出登录",
+      "signOutConfirmTitle": "确定退出登录吗？",
+      "signOutConfirmMessage": "退出登录将移除此设备上的身份验证数据和本地会话。你的工作流仍会保留在设备上。",
+      "warningMessage": "此操作只会让你退出当前设备上的账户。",
+      "signOutNote": "你可以随时重新登录以恢复云端功能。",
+      "notSignedIn": "尚未登录",
+      "teamsCount": "{count} 个团队",
+      "avatar": "头像",
+      "username": "用户名",
+      "email": "邮箱"
+    }
+  },
+  "workflow": {
+    "blocks": {
+      "ai-workflow": {
+        "name": "AI 工作流",
+        "description": "由 AI Power 创建的工作流"
+      }
+    }
   },
   "message": {
     "noBlock": "没有模块",
-    "noData": "没有数据可以展示",
-    "noTriggerBlock": "没有找到触发器模块",
+    "noData": "没有可显示的数据",
+    "noTriggerBlock": "找不到触发器模块",
     "useDynamicData": "了解如何添加动态数据",
-    "delete": "确定要删除\"{name}\"?",
-    "empty": "哎呀……你好像没有任何项目",
-    "maxSizeExceeded": "文件大小超出了允许的最大值",
-    "notSaved": "你真的要退出吗？ 你有未保存的更改！",
+    "delete": "确定要删除“{name}”吗？",
+    "empty": "暂无项目",
+    "maxSizeExceeded": "文件大小已超过允许的最大值",
+    "notSaved": "确定要离开吗？你有未保存的更改。",
     "somethingWrong": "出现错误",
-    "limitExceeded": "您已超出限制"
+    "limitExceeded": "已超出限制"
   },
   "sort": {
     "sortBy": "排序方式",
@@ -70,7 +102,7 @@
     "mostUsed": "最常用"
   },
   "logStatus": {
-    "stopped": "停止",
+    "stopped": "已停止",
     "error": "错误",
     "success": "成功"
   }

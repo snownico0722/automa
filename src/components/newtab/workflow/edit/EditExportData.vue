@@ -68,7 +68,7 @@
         @change="updateData({ type: $event })"
       >
         <option v-for="type in dataExportTypes" :key="type.id" :value="type.id">
-          {{ type.name }}
+          {{ getExportTypeName(type) }}
         </option>
       </ui-select>
       <ui-expand
@@ -121,9 +121,13 @@ const emit = defineEmits(['update:data']);
 const dataToExport = ['data-columns', 'google-sheets', 'variable'];
 const onConflict = ['uniquify', 'overwrite', 'prompt'];
 
-const { t } = useI18n();
+const { t, te } = useI18n();
 const permission = useHasPermissions(['downloads']);
 
+function getExportTypeName(type) {
+  const localeKey = `shared.exportTypes.${type.id}`;
+  return te(localeKey) ? t(localeKey) : type.name;
+}
 function updateData(value) {
   emit('update:data', { ...props.data, ...value });
 }

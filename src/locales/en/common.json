@@ -50,6 +50,105 @@
     "0disable": "0 to disable",
     "millisecond": "millisecond | milliseconds"
   },
+  "shared": {
+    "blockCategories": {
+      "pinned": "Pinned blocks",
+      "interaction": "Web interaction",
+      "browser": "Browser",
+      "general": "General",
+      "onlineServices": "Online services",
+      "data": "Data",
+      "conditions": "Control flow",
+      "package": "Packages"
+    },
+    "blockActions": {
+      "pin": "Pin block",
+      "unpin": "Unpin block"
+    },
+    "events": {
+      "click": "Click",
+      "dblclick": "Double click",
+      "mouseup": "Mouse up",
+      "mousedown": "Mouse down",
+      "mouseenter": "Mouse enter",
+      "mouseleave": "Mouse leave",
+      "mouseover": "Mouse over",
+      "mouseout": "Mouse out",
+      "mousemove": "Mouse move",
+      "focus": "Focus",
+      "blur": "Blur",
+      "input": "Input",
+      "change": "Change",
+      "touchstart": "Touch start",
+      "touchend": "Touch end",
+      "touchmove": "Touch move",
+      "touchcancel": "Touch cancel",
+      "keydown": "Key down",
+      "keyup": "Key up",
+      "submit": "Submit",
+      "wheel": "Wheel"
+    },
+    "exportTypes": {
+      "json": "JSON",
+      "csv": "CSV",
+      "plain-text": "Plain text"
+    },
+    "workflowCategories": {
+      "scrape": "Scraping",
+      "automation": "Automation",
+      "productivity": "Productivity"
+    }
+  },
+  "workflow": {
+    "conditionBuilder": {
+      "valueTypes": {
+        "value": "Value",
+        "code": "Code",
+        "data#exists": "Data exists",
+        "element#text": "Element text",
+        "element#exists": "Element exists",
+        "element#notExists": "Element does not exist",
+        "element#visible": "Element visible",
+        "element#visibleScreen": "Element visible on screen",
+        "element#invisible": "Element hidden on screen",
+        "element#attribute": "Element attribute value"
+      },
+      "compareTypes": {
+        "eq": "Equals",
+        "eqi": "Equals (case insensitive)",
+        "nq": "Not equals",
+        "gt": "Greater than",
+        "gte": "Greater than or equal",
+        "lt": "Less than",
+        "lte": "Less than or equal",
+        "cnt": "Contains",
+        "cni": "Contains (case insensitive)",
+        "nct": "Does not contain",
+        "nci": "Does not contain (case insensitive)",
+        "stw": "Starts with",
+        "enw": "Ends with",
+        "rgx": "Matches RegEx",
+        "itr": "Is truthy",
+        "ifl": "Is falsy"
+      },
+      "inputTypes": {
+        "selector": "CSS selector or XPath",
+        "value": "Value",
+        "attrName": "Attribute name",
+        "dataPath": "variables@variableName"
+      },
+      "groups": {
+        "value": "Value",
+        "element": "Element",
+        "basic": "Basic",
+        "number": "Number",
+        "text": "Text",
+        "boolean": "Boolean"
+      },
+      "empty": "Empty",
+      "jsCode": "JS code"
+    }
+  },
   "message": {
     "noBlock": "No block",
     "noData": "No data to show",

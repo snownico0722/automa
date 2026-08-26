@@ -7,7 +7,7 @@
       @change="handleSelectChange"
     >
       <option v-for="event in eventList" :key="event.id" :value="event.id">
-        {{ event.name }}
+        {{ getEventName(event) }}
       </option>
     </ui-select>
     <button
@@ -81,7 +81,7 @@ const props = defineProps({
 });
 const emit = defineEmits(['update:data']);
 
-const { t } = useI18n();
+const { t, te } = useI18n();
 
 const eventComponents = {
   'mouse-event': TriggerEventMouse,
@@ -96,6 +96,10 @@ const eventComponents = {
 const params = ref(props.data.eventParams);
 const showOptions = ref(false);
 
+function getEventName(event) {
+  const localeKey = `shared.events.${event.id}`;
+  return te(localeKey) ? t(localeKey) : event.name;
+}
 function getEventDetailsUrl() {
   const eventType = toCamelCase(props.data.eventType);
 

@@ -74,12 +74,109 @@
       "email": "邮箱"
     }
   },
+  "shared": {
+    "blockCategories": {
+      "pinned": "已固定模块",
+      "interaction": "网页交互",
+      "browser": "浏览器",
+      "general": "常规",
+      "onlineServices": "在线服务",
+      "data": "数据",
+      "conditions": "流程控制",
+      "package": "包"
+    },
+    "blockActions": {
+      "pin": "固定模块",
+      "unpin": "取消固定模块"
+    },
+    "events": {
+      "click": "点击",
+      "dblclick": "双击",
+      "mouseup": "鼠标抬起",
+      "mousedown": "鼠标按下",
+      "mouseenter": "鼠标进入",
+      "mouseleave": "鼠标离开",
+      "mouseover": "鼠标移入",
+      "mouseout": "鼠标移出",
+      "mousemove": "鼠标移动",
+      "focus": "获得焦点",
+      "blur": "失去焦点",
+      "input": "输入",
+      "change": "更改",
+      "touchstart": "触摸开始",
+      "touchend": "触摸结束",
+      "touchmove": "触摸移动",
+      "touchcancel": "触摸取消",
+      "keydown": "按键按下",
+      "keyup": "按键抬起",
+      "submit": "提交",
+      "wheel": "滚轮"
+    },
+    "exportTypes": {
+      "json": "JSON",
+      "csv": "CSV",
+      "plain-text": "纯文本"
+    },
+    "workflowCategories": {
+      "scrape": "数据抓取",
+      "automation": "自动化",
+      "productivity": "效率工具"
+    }
+  },
   "workflow": {
     "blocks": {
       "ai-workflow": {
         "name": "AI 工作流",
         "description": "由 AI Power 创建的工作流"
       }
+    },
+    "conditionBuilder": {
+      "valueTypes": {
+        "value": "值",
+        "code": "代码",
+        "data#exists": "数据存在",
+        "element#text": "元素文本",
+        "element#exists": "元素存在",
+        "element#notExists": "元素不存在",
+        "element#visible": "元素可见",
+        "element#visibleScreen": "元素在屏幕内可见",
+        "element#invisible": "元素在屏幕内隐藏",
+        "element#attribute": "元素属性值"
+      },
+      "compareTypes": {
+        "eq": "等于",
+        "eqi": "等于（忽略大小写）",
+        "nq": "不等于",
+        "gt": "大于",
+        "gte": "大于或等于",
+        "lt": "小于",
+        "lte": "小于或等于",
+        "cnt": "包含",
+        "cni": "包含（忽略大小写）",
+        "nct": "不包含",
+        "nci": "不包含（忽略大小写）",
+        "stw": "开头为",
+        "enw": "结尾为",
+        "rgx": "匹配正则表达式",
+        "itr": "为真值",
+        "ifl": "为假值"
+      },
+      "inputTypes": {
+        "selector": "CSS 选择器或 XPath",
+        "value": "值",
+        "attrName": "属性名称",
+        "dataPath": "variables@variableName"
+      },
+      "groups": {
+        "value": "值",
+        "element": "元素",
+        "basic": "基础",
+        "number": "数值",
+        "text": "文本",
+        "boolean": "布尔值"
+      },
+      "empty": "空",
+      "jsCode": "JS 代码"
     }
   },
   "message": {

@@ -122,7 +122,7 @@
             :key="id"
             :value="id"
           >
-            {{ category }}
+            {{ getWorkflowCategory(id, category) }}
           </option>
         </ui-select>
         <span class="ml-2 mt-5 block text-sm text-gray-600 dark:text-gray-200">
@@ -160,7 +160,7 @@ const props = defineProps({
 });
 const emit = defineEmits(['close', 'publish', 'change', 'update']);
 
-const { t } = useI18n();
+const { t, te } = useI18n();
 const toast = useToast();
 const userStore = useUserStore();
 const teamWorkflowStore = useTeamWorkflowStore();
@@ -173,6 +173,10 @@ const state = reactive({
   workflow: JSON.parse(JSON.stringify(props.workflow)),
 });
 
+function getWorkflowCategory(id, fallback) {
+  const localeKey = `shared.workflowCategories.${id}`;
+  return te(localeKey) ? t(localeKey) : fallback;
+}
 async function publishWorkflow() {
   try {
     state.isPublishing = true;

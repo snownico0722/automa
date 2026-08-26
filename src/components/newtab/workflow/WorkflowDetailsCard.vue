@@ -30,7 +30,7 @@
           :model-value="workflow.icon.startsWith('http') ? workflow.icon : ''"
           type="url"
           placeholder="http://example.com/img.png"
-          label="Icon URL"
+          :label="t('common.iconUrl')"
           @change="updateWorkflowIcon"
         />
       </div>
